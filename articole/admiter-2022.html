@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <title>Admitere 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../js/modal.js"></script>
+</head>
+<body>
+
+  <header>
+    <ul class="navbar">
+      <li class="navbar-item"><a href="../index.html">Acasa</a></li>
+      <li class="navbar-item"><a href="../anunturi.html">Articole</a></li>
+      <li class="navbar-item"><a href="../despre.html">Despre Liceu</a></li>
+      <li class="navbar-item"><a href="../contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="content">
+
+    <div class="main-content">
+      <h1>Inceperea sesiunii de admitere vara anului 2022</h1>
+      <img class="modal-image" 
+           src="../images/admitere.jpg" 
+           alt="Admitere"
+           onclick="createModal(this)">
+    </div>
+  </div>
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+
+  <footer> 
+    <div class="centered footer-info">
+      <span>&#127279;Liceul Teoretic "Gr. Vieru" Briceni</span>
+      <span>2022</span>
+    </div>
+  </footer>
+
+</body>
+</html>

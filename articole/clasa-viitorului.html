@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <title>Clasa Viitorului</title>
+  <script src="../js/modal.js"></script>
+</head>
+<body>
+
+  <header>
+    <ul class="navbar">
+      <li class="navbar-item"><a href="../index.html">Acasa</a></li>
+      <li class="navbar-item"><a href="../anunturi.html">Articole</a></li>
+      <li class="navbar-item"><a href="../despre.html">Despre Liceu</a></li>
+      <li class="navbar-item"><a href="../contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="content">
+
+    <div class="main-content">
+      <h1>Clasa viitorului</h1>
+      <p>Încă o victorie!!! Printre cele 20 de instituții selectate pentru a face parte din rețeaua Clasa Viitorului suntem bucuroși sa anunțam ca și Liceul Teoretic ,, Grigore Vieru” este selectat. Succes comunității școlare in implementare!</p>
+      <img class="modal-image" 
+           src="../images/screen1.jpg" 
+           alt="screen1"
+           onclick="createModal(this)">
+      <img class="modal-image" 
+           src="../images/screen2.jpg" 
+           alt="screen2"
+           onclick="createModal(this)">
+    </div>
+  </div>
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" alt="Modal text" src="https://fakeimg.pl/640x360" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+
+  <footer> 
+    <div class="centered footer-info">
+      <span>&#127279;Liceul Teoretic "Gr. Vieru" Briceni</span>
+      <span>2022</span>
+    </div>
+  </footer>
+
+</body>
+</html>

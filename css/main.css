@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+}
+
+.cover-img {
+  background-image: url("../images/LTGrVieru.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  height: 100vh;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000b3;
+}
+
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  color: white;
+}
+
+.content {
+  min-height: 86vh;
+  margin: 0px 40px;
+  display: flex;
+  text-align: justify;
+}
+
+.navbar {
+  height: auto;
+  margin: 0px;
+  padding: 0px 5px;
+  background-color: #669999;
+  /* Pentru a preveni spatiul intre butoane */
+  font-size: 0px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-item {
+  display: inline;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  max-height: 6vh;
+  font-size: 13px;
+}
+
+.navbar-item>a:hover {
+ background-color: #527a7a;
+}
+
+.active>a {
+  background-image: linear-gradient(#82c3c3, white);
+  color: black;
+}
+
+.centered {
+  text-align: center;
+  background-color: #b8b894;
+  height: 8vh;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#harta {
+  height: 300px;
+  width: 100%;
+}
+
+.right-col {
+  margin-left: 10px;
+  flex: 1 1 250px;
+}
+
+.left-col {
+  margin-right: 10px;
+  flex: 1 1 350px;
+  height: fit-content;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.right-content {
+  flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .right-content {
+    display: none;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+}
+
+img{
+  width: auto;
+  height: 50vh;
+}
