@@ -1,3 +1,9 @@
+:root {
+  --primary: #3d8271;
+  --highlight: #29564c;
+  --active: #51ac96;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -33,157 +39,50 @@ body {
   margin: 10px 0px;
 }
 
-/* Navbar */
-.navbar {
-  /* Pentru a preveni spatiul intre butoane*/
+nav {
+  background: var(--primary);
   font-size: 0px;
   position: sticky;
   top: 0;
-  overflow: hidden;
-  background-color: #669999;
 }
 
-.navbar .icon {
-  display: none;
-  padding: 6px;
-  font-size: 0px;
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-.icon>img {
-  width: 25px;
-  height: auto;
+.active {
+  background: var(--active);
 }
 
-/* Butonul din bara de navigare */
-.navbar-item {
-  display: inline;
-}
-
-/* Lincul care apartine butonului */
-.navbar .nav-item {
-  color: white;
-  text-decoration: none;
-  padding: 10px 10px;
-  display: inline-block;
-  max-height: 6vh;
-  font-size: 13px;
-}
-
-.navbar a:hover {
-  background-color: #527a7a;
-}
-
-.navbar a.active {
-  background-image: linear-gradient(#82c3c3, white);
-  color: black;
-}
-
-@media screen and (max-width: 450px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar.extended {position: sticky;}
-  .navbar.extended .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.extended a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Continutul principal al paginii */
-.content {
-  min-height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-}
-
-.col.side {
-  -webkit-flex: 1;
-  -ms-flex: 1; 
-  flex: 1;
-}
-
-.col.main {
-  -webkit-flex: 5;
-  -ms-flex: 5; 
-  flex: 5;
-}
-
-.col.nav {
-  -webkit-flex: 6;
-  -ms-flex: 6; 
-  flex: 6;
-}
-
-/* NOTE: Va depinde de layoutul decis */
-#titlu {
-  text-align: left;
-}
-
-.main-view {
+.center {
+  margin: 0px auto;
   padding: 0px 10px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.full {
+  width: 600px;
 }
 
-/* Pagina de contact */
-#harta {
-  height: 300px;
-  width: 100%;
+.nav-item {
+  text-decoration: none;
+  font-size:16px;
+  color: white;
+  display: inline-block;
+  padding: 4px 7px;
 }
 
-.right-col {
-  margin-left: 10px;
-  flex: 1 1 250px;
-}
-
-.left-col {
-  margin-right: 10px;
-  flex: 1 1 350px;
-  height: fit-content;
-}
-
-.side-panel {
-  flex: 0 0 200px;
-}
-
-.main-view {
-  flex: 1 0 400px;
+.nav-item:hover {
+  background-color: var(--highlight);
 }
 
 @media screen and (max-width: 600px) {
-  .side-panel {
-    flex: 1;
-  }
-  .main-view {
-    flex: fit-content;
-  }
+  .full { width: 100%; }
 }
 
-@media screen and (max-width: 900px) {
-  .side.left {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .side {
-    display: none;
-  }
+main{
+  text-align: justify;
+  min-height: 85vh;
 }
 
 img {
@@ -192,9 +91,75 @@ img {
 }
 
 /* footer */
-.centered {
-  text-align: center;
+footer {
   background-color: #b8b894;
   height: 8vh;
 }
 
+/* Article */
+article {
+	padding: 10px;
+}
+
+article:hover {
+	box-shadow: 0px 0px 14px -4px black;
+	border-radius: 10px;
+}
+
+/* Text and stuff */
+
+[class^="f-"][class*="mut"] {
+	color: #636363;
+}
+
+[class^="f-"][class*="mono"] {
+	font-family: Fantasque Sans Mono;
+}
+
+[class^="f-"][class*="10"] {
+	font-size: 10px;
+}
+
+[class^="f-"][class*="12"] {
+	font-size: 12px;
+}
+
+[class^="f-"][class*="al"] {
+	text-align: left;
+}
+
+[class^="f-"][class*="ar"] {
+	text-align: right;
+}
+
+[class^="f-"][class*="ac"] {
+	text-align: center;
+}
+
+[class^="f-"][class*="aj"] {
+	text-align: justify;
+}
+
+/* Margins and paddings */
+
+.m-0 {
+  margin: 0;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
