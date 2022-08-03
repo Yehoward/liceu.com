@@ -85,6 +85,10 @@ main{
   min-height: 85vh;
 }
 
+main h1, main h2, main h3 {
+  text-align: left;
+}
+
 img {
   width: auto;
   height: 50vh;
