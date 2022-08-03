@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
   <link rel="icon" type="image/png" href="images/icon.png">
   <title>LT Gr Vieru</title>
 </head>
+
 <body>
   <header>
     <div class="cover-img">
@@ -20,68 +22,77 @@
     </div>
   </header>
 
-  <ul class="navbar">
-    <li class="navbar-item active">
-      <a href="index.html">Acasa</a>
-    </li>
-
-    <li class="navbar-item">
-      <a href="anunturi.html">Articole</a>
-    </li>
-
-    <li class="navbar-item">
-      <a href="despre.html">Despre Liceu</a>
-    </li>
-
-    <li class="navbar-item">
-      <a href="contact.html">Contact</a>
-    </li>
-  </ul>
-
-  <div class="content">
-    <div class="main-content">
-      <h1 id="titlu">Saitul oficial a Liceului Teoretic "Gr Vieru" Briceni</h1>
-
-      <p>Adipisicing ipsam alias incidunt odit accusantium natus. Aliquid praesentium eveniet at accusamus ut, temporibus Lorem excepturi dignissimos quia odit blanditiis molestiae iste Neque atque animi esse autem blanditiis excepturi? Nam?</p>
-
-      <p>Adipisicing harum veritatis omnis voluptatum nesciunt iusto Fugit maiores harum atque incidunt provident expedita sequi? Optio ad molestiae odio atque nihil temporibus Similique quos veniam omnis culpa doloremque Accusamus error</p>
-
-      <p>Lorem perferendis ipsum est animi ex et saepe Soluta aut eaque placeat nulla tempora Dolor deleniti exercitationem error pariatur earum Sequi ullam quam placeat mollitia assumenda Repudiandae quaerat in nostrum</p>
-
-      <p>Dolor nisi tempora quo numquam aliquam. Esse aspernatur cum et excepturi porro tenetur. Veniam similique repellat eligendi optio tenetur et! Accusantium aliquam asperiores repudiandae aperiam molestiae Quia earum recusandae quasi</p>
-
-      <p>Dolor architecto natus repudiandae dolorem unde. Neque corrupti voluptas deleniti minus quos corrupti Laboriosam dolores dolor nostrum quae dolor. Aliquam explicabo reprehenderit tenetur voluptatibus dicta. Dignissimos alias voluptate repudiandae laboriosam.</p>
-
-      <p>Adipisicing adipisci dolorem itaque ratione quos? Ducimus illo perferendis facilis molestiae voluptatibus voluptate maxime facilis nihil aliquam? Doloribus vitae laboriosam asperiores eveniet neque corrupti eveniet officiis? Beatae doloribus officiis quo</p>
-
-      <p>Ipsum hic obcaecati consectetur doloremque ipsum molestias consequuntur Sint nostrum dicta vero sapiente accusamus Aliquid culpa accusamus nemo adipisci veniam. Vel saepe nostrum eligendi saepe esse rerum. Sed incidunt accusamus.</p>
-
-      <p>Lorem illo consequuntur nihil modi quasi aperiam fuga cum Hic voluptatum quae officia quam sed nam. Laborum explicabo in cupiditate assumenda hic, amet Dolores corporis asperiores delectus exercitationem aut explicabo</p>
-
-      <p>Lorem quod inventore accusantium perferendis deserunt. Quas cupiditate ea laboriosam amet corrupti. Aliquam quasi laborum voluptatum at corporis Magni commodi quae doloremque veritatis deleniti. Officiis minus vel minus rerum quaerat</p>
-
-      <p>Adipisicing assumenda soluta tenetur omnis quisquam! Dolor iusto nobis explicabo quo quis Ab reiciendis nemo non voluptas dolorem Illo labore perferendis distinctio eius sunt sed. Distinctio perspiciatis incidunt reiciendis exercitationem?</p>
-
-      <p>Lorem fugit itaque quisquam quasi animi Voluptas magni dignissimos vero quae perspiciatis? Maxime quibusdam tempore possimus eligendi esse fugit Id placeat dolorum praesentium deserunt repellat Voluptatum commodi alias ab ad?</p>
-
-      <p>Sit inventore veniam a obcaecati tenetur Delectus amet laboriosam quia dignissimos facilis. Quidem sint harum itaque voluptatibus repudiandae. Nostrum dolor error incidunt iusto fugit velit nobis quaerat beatae. Sunt vero</p>
-
-      <p>Ipsum natus perspiciatis ipsum impedit assumenda Explicabo eligendi excepturi consequatur obcaecati corrupti laudantium, quis! Veniam recusandae fugit deleniti quas consequuntur Porro sit non porro iusto sapiente. Assumenda consectetur consequuntur corporis.</p>
-
-      <p>Amet eum vel nulla voluptate reiciendis hic! Maiores soluta pariatur unde praesentium quam! Iste expedita facilis a quod perspiciatis modi rem Dolorum veritatis explicabo aliquid facilis similique. Quis nisi voluptatem.</p>
+  <nav class="navbar row" id="navbar">
+    <div class="col side"></div>
+    <div class="col nav">
+      <a class="nav-item active" href="index.html">Acasa</a>
+      <a class="nav-item" href="anunturi.html">Articole</a>
+      <a class="nav-item" href="despre.html">Despre Liceu</a>
+      <a class="nav-item" href="contact.html">Contact</a>
+      <a href="javascript:void(0);" 
+        class="icon"
+        onclick="toggleNavbar()">
+        <img src="./images/hamburger.png" alt="hamburger icon">
+      </a>
     </div>
+    <div class="col side"></div>
+  </nav>
 
-    <div class="right-content">
-      <blockquote>
-        The difference between sentiment and being sentimental is the following: Sentiment is when a driver swerves out of the way to avoid hitting a rabbit on the road. Being sentimental is when the same driver, when swerving away from the rabbit hits a pedestrian. Frank Herbert, "The White Plague"
-      </blockquote>
+  <main class="content">
+    <div class="row">
+      <div class="col side"></div>
+
+      <div class="col row main">
+        <div class="main-view" id="main-content">
+          <h1 id="titlu">Saitul oficial a Liceului Teoretic "Gr Vieru" Briceni</h1>
+          
+          <p>Adipisicing ipsam alias incidunt odit accusantium natus. Aliquid praesentium eveniet at accusamus ut, temporibus Lorem excepturi dignissimos quia odit blanditiis molestiae iste Neque atque animi esse autem blanditiis excepturi? Nam?</p>
+          
+          <p>Adipisicing harum veritatis omnis voluptatum nesciunt iusto Fugit maiores harum atque incidunt provident expedita sequi? Optio ad molestiae odio atque nihil temporibus Similique quos veniam omnis culpa doloremque Accusamus error</p>
+          
+          <p>Lorem perferendis ipsum est animi ex et saepe Soluta aut eaque placeat nulla tempora Dolor deleniti exercitationem error pariatur earum Sequi ullam quam placeat mollitia assumenda Repudiandae quaerat in nostrum</p>
+          
+          <p>Dolor nisi tempora quo numquam aliquam. Esse aspernatur cum et excepturi porro tenetur. Veniam similique repellat eligendi optio tenetur et! Accusantium aliquam asperiores repudiandae aperiam molestiae Quia earum recusandae quasi</p>
+          
+          <p>Dolor architecto natus repudiandae dolorem unde. Neque corrupti voluptas deleniti minus quos corrupti Laboriosam dolores dolor nostrum quae dolor. Aliquam explicabo reprehenderit tenetur voluptatibus dicta. Dignissimos alias voluptate repudiandae laboriosam.</p>
+          
+          <p>Adipisicing adipisci dolorem itaque ratione quos? Ducimus illo perferendis facilis molestiae voluptatibus voluptate maxime facilis nihil aliquam? Doloribus vitae laboriosam asperiores eveniet neque corrupti eveniet officiis? Beatae doloribus officiis quo</p>
+          
+          <p>Ipsum hic obcaecati consectetur doloremque ipsum molestias consequuntur Sint nostrum dicta vero sapiente accusamus Aliquid culpa accusamus nemo adipisci veniam. Vel saepe nostrum eligendi saepe esse rerum. Sed incidunt accusamus.</p>
+          
+          <p>Lorem illo consequuntur nihil modi quasi aperiam fuga cum Hic voluptatum quae officia quam sed nam. Laborum explicabo in cupiditate assumenda hic, amet Dolores corporis asperiores delectus exercitationem aut explicabo</p>
+          
+          <p>Lorem quod inventore accusantium perferendis deserunt. Quas cupiditate ea laboriosam amet corrupti. Aliquam quasi laborum voluptatum at corporis Magni commodi quae doloremque veritatis deleniti. Officiis minus vel minus rerum quaerat</p>
+          
+          <p>Adipisicing assumenda soluta tenetur omnis quisquam! Dolor iusto nobis explicabo quo quis Ab reiciendis nemo non voluptas dolorem Illo labore perferendis distinctio eius sunt sed. Distinctio perspiciatis incidunt reiciendis exercitationem?</p>
+          
+          <p>Lorem fugit itaque quisquam quasi animi Voluptas magni dignissimos vero quae perspiciatis? Maxime quibusdam tempore possimus eligendi esse fugit Id placeat dolorum praesentium deserunt repellat Voluptatum commodi alias ab ad?</p>
+          
+          <p>Sit inventore veniam a obcaecati tenetur Delectus amet laboriosam quia dignissimos facilis. Quidem sint harum itaque voluptatibus repudiandae. Nostrum dolor error incidunt iusto fugit velit nobis quaerat beatae. Sunt vero</p>
+          
+          <p>Ipsum natus perspiciatis ipsum impedit assumenda Explicabo eligendi excepturi consequatur obcaecati corrupti laudantium, quis! Veniam recusandae fugit deleniti quas consequuntur Porro sit non porro iusto sapiente. Assumenda consectetur consequuntur corporis.</p>
+          
+          <p>Amet eum vel nulla voluptate reiciendis hic! Maiores soluta pariatur unde praesentium quam! Iste expedita facilis a quod perspiciatis modi rem Dolorum veritatis explicabo aliquid facilis similique. Quis nisi voluptatem.</p>
+        </div>
+
+        <aside class="side-panel" id="right-content">
+          <blockquote>
+            The difference between sentiment and being sentimental is the following: Sentiment is when a driver swerves out of the way to avoid hitting a rabbit on the road. Being sentimental is when the same driver, when swerving away from the rabbit hits a pedestrian. Frank Herbert, "The White Plague"
+          </blockquote>
+        </aside>
+      </div>
+      
+      <div class="col side left"></div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <div class="centered footer-info">
-      <span>🄯Liceul Teoretic "Gr. Vieru" Briceni</span> <span>2022</span>
+      <span>🄯 Liceul Teoretic "Gr. Vieru" Briceni</span> <span>2022</span>
     </div>
   </footer>
+  <script src="./js/main.js">
+    
+  </script>
 </body>
 </html>

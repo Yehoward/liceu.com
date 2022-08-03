@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
+
+/* Header */
 
 .cover-img {
   background-image: url("../images/LTGrVieru.jpg");
@@ -16,36 +22,45 @@ body {
 }
 
 .overlay-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-  color: white;
+	color: white;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40vh 15px 0 15px;
 }
 
-.content {
-  min-height: 86vh;
-  margin: 0px 40px;
-  display: flex;
-  text-align: justify;
+.overlay-text h1, .overlay-text h3 {
+  margin: 10px 0px;
 }
 
+/* Navbar */
 .navbar {
-  height: auto;
-  margin: 0px;
-  padding: 0px 5px;
-  background-color: #669999;
-  /* Pentru a preveni spatiul intre butoane */
+  /* Pentru a preveni spatiul intre butoane*/
   font-size: 0px;
   position: sticky;
   top: 0;
+  overflow: hidden;
+  background-color: #669999;
 }
 
+.navbar .icon {
+  display: none;
+  padding: 6px;
+  font-size: 0px;
+}
+
+.icon>img {
+  width: 25px;
+  height: auto;
+}
+
+/* Butonul din bara de navigare */
 .navbar-item {
   display: inline;
 }
 
-.navbar-item a {
+/* Lincul care apartine butonului */
+.navbar .nav-item {
   color: white;
   text-decoration: none;
   padding: 10px 10px;
@@ -54,19 +69,70 @@ body {
   font-size: 13px;
 }
 
-.navbar-item>a:hover {
- background-color: #527a7a;
+.navbar a:hover {
+  background-color: #527a7a;
 }
 
-.active>a {
+.navbar a.active {
   background-image: linear-gradient(#82c3c3, white);
   color: black;
 }
 
-.centered {
-  text-align: center;
-  background-color: #b8b894;
-  height: 8vh;
+@media screen and (max-width: 450px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar.extended {position: sticky;}
+  .navbar.extended .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.extended a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Continutul principal al paginii */
+.content {
+  min-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.col.side {
+  -webkit-flex: 1;
+  -ms-flex: 1; 
+  flex: 1;
+}
+
+.col.main {
+  -webkit-flex: 5;
+  -ms-flex: 5; 
+  flex: 5;
+}
+
+.col.nav {
+  -webkit-flex: 6;
+  -ms-flex: 6; 
+  flex: 6;
+}
+
+/* NOTE: Va depinde de layoutul decis */
+#titlu {
+  text-align: left;
+}
+
+.main-view {
+  padding: 0px 10px;
 }
 
 .row {
@@ -74,6 +140,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Pagina de contact */
 #harta {
   height: 300px;
   width: 100%;
@@ -90,25 +157,44 @@ body {
   height: fit-content;
 }
 
-.main-content {
-  flex: 3;
+.side-panel {
+  flex: 0 0 200px;
 }
 
-.right-content {
-  flex: 1;
+.main-view {
+  flex: 1 0 400px;
 }
 
 @media screen and (max-width: 600px) {
-  .right-content {
-    display: none;
-  }
-  
-  .main-content {
+  .side-panel {
     flex: 1;
+  }
+  .main-view {
+    flex: fit-content;
   }
 }
 
-img{
+@media screen and (max-width: 900px) {
+  .side.left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .side {
+    display: none;
+  }
+}
+
+img {
   width: auto;
   height: 50vh;
 }
+
+/* footer */
+.centered {
+  text-align: center;
+  background-color: #b8b894;
+  height: 8vh;
+}
+
