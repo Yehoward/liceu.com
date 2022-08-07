@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <title>Orar</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-items full center">
+      <img src="images/logo.png" class="logo" alt="Logou">
+      <a class="nav-item" href="./index.html">Acasa</a>
+      <a class="nav-item" href="./anunturi.html">Anunturi</a>
+      <a class="nav-item" href="./orar.html">Orar</a>
+      <a class="nav-item" href="./despre.html">Despre</a>
+      <a class="nav-item" href="./contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="center full">
+
+
+    <h3>Formularul de admitere</h3>
+    <form method="POST" enctype="multipart/form-data">
+      <div class="row">
+
+        <div class="col-50 p-1">
+          <label for="nume">Nume:</label><br>
+          <input type="text" value="" name="nume" required>
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="prenume">Prenume:</label><br>
+          <input name="prenume" type="text">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="tel">Telefon:</label><br>
+          <input name="tel" type="tel">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="email">Email:</label><br>
+          <input name="email" type="email">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="cerere">Cerere de inscriere:</label><br>
+          <input name="cerere" type="file">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="nastere">Certificat de Nastere:</label><br>
+          <input name="nastere" type="file">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="bulied">Buletin de Identitate:</label><br>
+          <input name="buletin" type="file">
+        </div>
+
+        <div class="col-50 p-1">
+          <label for="abs">Certificat de Absolvire:</label><br>
+          <input name="absolvire" type="file">
+        </div>
+      </div>
+
+      <button onclick="submitForm(form)" value="Trimiteti formularul">Trimite formularul</button>
+    </form>
+  </main>
+
+
+  <footer>
+    <div class="f-mono-mut-ac">
+      <span>🄯 Liceul Teoretic "Gr. Vieru" Briceni</span> <span>2022</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js">
+
+  </script>
+</body>
+
+</html>
