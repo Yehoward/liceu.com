@@ -39,6 +39,9 @@
 body {
   margin: 0;
   font-family: Vollkorn-Regular;
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Header */
@@ -81,10 +84,11 @@ table, td, th {
   border-collapse: collapse;
 }
 
-.active {
-  background: var(--active);
-}
-
+/* .active { */
+/*   /* background: var(--active); */ 
+/* background: radial-gradient(circle, var(--active) 34%, var(--primary) 90%); */
+/* } */
+         
 .center {
   margin: 0px auto;
   padding: 0px 10px;
@@ -99,15 +103,30 @@ table, td, th {
   font-size:16px;
   color: white;
   display: inline-block;
+  transition: 0.5s;
   padding: 10px 7px;
+  background: linear-gradient(180deg, var(--primary) 40%, var(--primary) 43%, var(--highlight) 57%, var(--highlight) 60%);
+  background-size: auto 250%;
+  background-position-y: 0;
 }
 
 .nav-item:hover {
-  background-color: var(--highlight);
+  background-position-y: 100%;
 }
 
 .nav-items {
   display: flex;
+}
+
+.active {
+  background: linear-gradient(0deg, var(--active) 15%, var(--active) 44%, var(--primary) 100%);
+  transition: 0.5s;
+  background-size: auto 200%;
+  background-position-y: 0;
+}
+
+.active:hover {
+  background-position-y: 100%;
 }
 
 /* Info box */
@@ -151,11 +170,14 @@ article {
 
 .article {
   background-color: beige;
+	border-radius: 10px;
+  transition: 0.5s;
 }
 
 .article-hover:hover {
 	box-shadow: 0px 0px 14px -4px black;
 	border-radius: 10px;
+  transition: 0.5s;
 }
 
 /* Text and stuff */
